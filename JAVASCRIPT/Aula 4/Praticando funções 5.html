@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // Crie uma função que verifica se o numero é primo, se for primo, retorna 
+        // o numero elevado ao cubo, senão, exibe na tela não é primo. Obs.: o valor e 
+        // retornado deve ser exibido fora da função;
+
+        var divisores = 0;
+        var numero = parseInt(prompt("Digite um número: "));
+
+        function primo() {
+            for (i = 2; i <= numero; i++) {
+                if (numero % i == 0)
+                divisores++;
+            }
+
+            if (divisores > 1)
+                document.write("Seu número não é primo!")
+
+            if (divisores === 1)
+                return numero**3;
+        }
+
+        primo(numero)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 2.Crie um script onde o usuario digite 3 numeros , esse numeros elevados 
+        a 2 , 3 e 4 , mostre o resultado de cada um deles e a soma das potencias dos
+        3 -->
+
+    <script>
+
+        var numero1 = parseInt(prompt("Digite um valor:"));
+        var numero2 = parseInt(prompt("Digite outro valor:"));
+        var numero3 = parseInt(prompt("Digite outro valor:"));
+        
+        cont1 = Math.pow(numero1, 2)
+        cont2 = Math.pow(numero2, 3)
+        cont3 = Math.pow(numero3, 4) 
+        soma = (cont1 + cont2 + cont3)
+
+        document.write("O número ", numero1, " elevado a 2 potencia é ", cont1, "<br>");
+        document.write("O número ", numero2, " elevado a 3 potencia é ", cont2, "<br>");
+        document.write("O número ", numero3, " elevado a 4 potencia é ", cont3, "<br>");
+        document.write("A soma das potências é ", soma )
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

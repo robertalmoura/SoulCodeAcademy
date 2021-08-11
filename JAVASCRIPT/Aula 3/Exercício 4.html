@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        var idades;
+        var maiores = 0;
+        var menores = 0;
+
+        for(var i = 0; i < 10; i++){
+            idades = parseInt(prompt("Digite uma idade: "));
+
+            if(idades >= 18){
+                maiores++;
+            }
+            
+            if(idades < 18){
+                menores++;
+            }
+        }
+
+        document.write("Maiores: ", maiores, " || ");
+       
+        document.write("Menores: ", menores);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

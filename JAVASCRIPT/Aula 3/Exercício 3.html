@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var numeros;
+        var inter1 = 0;
+        var inter2 = 0;
+        var inter3 = 0;
+        var inter4 = 0;
+
+        for(var i = 0; i < 10; i++){
+            numeros = parseInt(prompt("Digite uma idade: "));
+
+                     
+            if(numeros > 0 && numeros <= 20){
+                inter1++;
+            }
+            if(numeros >= 26 && numeros <= 50){
+                inter2++;
+            }
+            if(numeros >= 51 && numeros <= 75){
+                inter3++;
+            }
+            if(numeros >= 76 && numeros <= 100){
+                inter4++;
+            }
+            if(numeros < 0){ 
+                alert("Esse número é negativo")
+            }
+            
+        }
+22
+        document.write("Números entre 0 e 25: ", inter1, " || ");
+       
+        document.write("Números entre 26 e 50: ", inter2, " || ");
+
+        document.write("Números entre 51 e 75: ", inter3, " || ");
+
+        document.write("Números entre 76 e 100: ", inter4, " . ");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
