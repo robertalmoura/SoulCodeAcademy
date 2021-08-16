@@ -1,0 +1,227 @@
+* {
+    margin: 0 top;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* utilizamos a maioria dos recursos apresentados no curso e todos os requisitos do projeto! 
+Esse é o codigo CSS referente a pagina de Responsabilidade Social, do PRojeto SoulLife By Ricardo Nunes */
+header {
+    background: url("./Responsabilidade_header.jpeg");
+    background-position: top center;
+    background-size: cover;
+    
+}
+
+header section {
+    width: 80%;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.logo {
+    width: 20%;
+    display: inline-block;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu {
+    width: 54%;
+    display: inline-block;
+}
+
+.menu ul {
+    width: 504px;
+    margin: 0 auto;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+    list-style: none;
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    background: #FFF;
+}
+
+.menu li a:hover {
+    background: #23829c;
+    color: #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 250px;
+}
+
+.busca {
+    top: -24px;
+    width: 20%;
+    display: inline-block;
+    position: relative;
+}
+
+input#buscar {
+    padding: 20px 10px;
+    width: 100%;
+    position: relative;
+    border: none;
+}
+
+.busca button.botao {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #a2bfa7;
+    border: none;
+    padding: 20px 10px;
+    color: #272727;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.busca button.botao:hover {
+    background: #5386a4;
+}
+main{
+    position: relative;
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+.caixaflex{
+    width: 100%;
+    height: 700px;
+    margin: 1px;
+    display: flex;
+    border-radius: 10px;
+}
+.item1, .item2, .item3{
+    width: 30%;
+    height: 600px;
+    border: outset;
+    margin: 10px;
+    border-radius: 10px;
+    background-color:#f2f2f2 ;
+    text-align: center;
+    overflow: hidden;
+}
+h2{
+    color: #95bfa9;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-indent: 1px;
+    padding: 10px
+}
+.IMG{
+    width:100%;
+    box-shadow: 10px 10px #f2f2f2 ;
+    height: 200px;
+}
+.saibamais {
+    background-color: #0388a6;
+    color: white;
+    width: 90px;
+    height: 20px;
+    border-radius: 5px;
+    font-weight: 550;
+}
+
+footer {
+            
+    display: grid;
+    grid-template-columns: 30fr 40fr 30fr;
+    grid-template-rows: auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+footer img {
+    width: 40%;
+}
+
+ul.socialmedia {
+    margin-top: 30px;
+}
+
+ul.socialmedia li {
+    display: inline;
+}
+
+ul.socialmedia img {
+    width: 10%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.topfooter ul{
+    margin-right: 160px;
+    padding: 10px;
+}
+
+.topfooter li {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.topfooter li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #272727;
+}
+
+.rodape_um {
+    padding: 20px;
+    margin-right: 50px;
+
+}
+
+.rodape_dois {
+    padding: 20px;
+}
+
+.rodape_dois h2{
+    margin-left: 80px;
+}
+
+.rodape_tres {
+    
+    padding: 20px;
+}
+
+.rodape_tres h2{
+    margin-left: 130px;
+}

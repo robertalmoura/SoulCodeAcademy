@@ -1,0 +1,817 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sectionhome {
+    background: url("./bg-header.jpg") no-repeat top center;
+    background-size: contain;
+}
+
+.sectionnossa {
+    background: url("./nossahistoria.jpg") no-repeat top center;
+    background-size: contain;
+}
+
+.sectionresp {
+    background: url("./Responsabilidade_header.jpeg") no-repeat top center;
+    background-size: contain;
+}
+
+.sectionprod {
+    background: url("./produto1.jpg") no-repeat top center;
+    background-size: contain;
+    line-height: 27px;
+}
+.sectionprod img {width: 100%;}
+
+.sectionnews {
+    background: url("./bg-news.jpg") no-repeat top center;
+    background-size: contain;
+    line-height: 27px;
+}
+
+.sectioncont {
+    background: url("./bg-contato.jpg") no-repeat top center;
+    background-size: contain;
+    line-height: 27px;
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header0 {
+    height: 500px;
+    padding: 70px 0;
+}
+
+.header1 {
+    height: 360px;
+    padding: 70px 0;
+    position: relative;
+}
+
+.header1 h3 {
+    position: absolute;
+    bottom: 30px;
+    width: 530px;
+    color: #FFF;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+
+.headertop {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.gradiente {
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(255,0,0,0));
+    position: absolute;
+    width: 100%;
+    height: 360px;
+}
+
+.logo {
+    width: 20%;
+    display: inline-block;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu {
+    width: 54%;
+    display: inline-block;
+}
+
+.menu ul {
+    width: 551px;
+    margin: 0 auto;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+    list-style: none;
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    background: #FFF;
+}
+
+.menu li a:hover {
+    background: #23829c;
+    color: #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 250px;
+}
+
+.busca {
+    top: -24px;
+    width: 25%;
+    display: inline-block;
+    position: relative;
+}
+
+input#buscar {
+    padding: 19px 10px;
+    width: 100%;
+    position: relative;
+    border: none;
+}
+
+.busca button.botao {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #a2bfa7;
+    border: none;
+    padding: 20px 10px;
+    color: #272727;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.busca button.botao:hover {
+    background: #5386a4;
+}
+
+
+main {
+    background: #FFF;
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.main1 {
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+.line {
+    border: 2px solid #96c1a7;
+    width: 30px;
+    margin: 0 auto 30px auto;
+}
+
+
+.linha1 {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.um_esquerda {
+    width: 48%;
+    background-image: url("./produto1.jpg");
+    height: 40vh;
+
+}
+
+.um_esquerda h3 {
+    color: white;
+    text-align: center;
+    margin-top: 240px;
+}
+
+.dois_direita {
+    width: 48%;
+    height: 40vh;
+    margin-left: 63px;
+    background-image: url("./delivery-de-produtos-farmaceuticos-970x472.jpg");
+
+}
+
+.dois_direita h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.dois_direita p {
+    width: 30%;
+    text-align: justify;
+    margin-left: 530px;
+    margin-top: 50px;
+}
+
+.linha2 {
+    margin-bottom: 30px;
+
+}
+
+.linha2 img,
+.linha3 img {
+    width: 100%;
+}
+
+.linha3 {
+    display: grid;
+    grid-template-columns: 40fr 40fr 20fr;
+    grid-template-rows: auto;
+
+
+}
+
+.margexthomenews {
+    background-color: #f2f2f2;
+    line-height: 3;
+}
+
+.margexthomenews h1 {
+    color: #272727;
+}
+
+.homenews {
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.imghomenews {
+    width: 100%;
+    height: 150px;
+}
+
+.homenews {
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 2px;
+}
+
+.homenews a {
+    text-align: center;
+    line-height: 20px;
+    color: #272727;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.divisor {
+    border: 2px solid #dadada;
+    margin: 20px auto;
+    width: 70px;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+a.saibamais {
+    background: #0388a6;
+    padding: 10px;
+    color: #FFF;
+    border: 2px solid #0388a6;
+    border-radius: 3px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    display: -webkit-box;
+    text-decoration: none;
+}
+
+
+
+.noticia_um {
+
+    text-align: justify;
+    font-weight: 700;
+    color: black;
+    line-height: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 10px;
+
+
+
+}
+
+.bodysaude {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.titsaude {
+    color: #f2f2f2;
+    background-color: #95bfa9;
+    font-size: 23px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    line-height: 35px;
+    padding: 20px;
+}
+
+.subtitsaude {
+    color: #272727;
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.saude p {
+    padding: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.saude {
+    width: 100%;
+}
+
+
+.noticia_dois {
+    margin-right: 10px;
+
+}
+
+.bodycarreira {
+    background-color: #f2f2f2;
+
+}
+
+.titcarreira {
+    color: #FFF;
+    background-color: #0388a6;
+    font-size: 23px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    line-height: 35px;
+    padding: 20px;
+}
+
+.carreira {
+    width: 100%;
+    text-align: justify;
+    font-weight: 700;
+    line-height: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e7e7e9;
+    padding: 20px;
+
+}
+
+.subtittrabalhe {
+    color: #272727;
+    padding: 30px 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.bodycarreira p {
+    padding: 0 20px 20px 20px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.coluna_tres {
+    border: 1px solid;
+    padding: 20px;
+}
+
+.linha4 {
+    display: grid;
+    grid-template-columns: 20fr 40fr 30fr;
+    grid-template-rows: auto;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer img {
+    width: 100%;
+}
+
+ul.socialmedia {
+    margin-top: 30px;
+}
+
+ul.socialmedia li {
+    display: inline;
+}
+
+ul.socialmedia img {
+    width: 10%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.topfooter h2,
+.rodape_tres h2 {
+    font-weight: normal;
+}
+
+.topfooter li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.topfooter li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #272727;
+}
+
+.rodape_um {
+    padding: 20px;
+
+}
+
+.rodape_dois {
+    padding: 20px;
+}
+
+.rodape_tres {
+    padding: 20px;
+}
+
+/* Nossa historia */
+
+.principalnossa {
+    position: relative;
+}
+
+.principal2nossa {
+    position: relative;
+    margin-top: 100px;
+}
+
+#div1nossa {
+    text-align: justify;
+    line-height: 27px;
+    margin-bottom: 30px;
+    color: #4586a4;
+}
+
+#div2nossa {
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    box-shadow: -20px 30px 20px #95bfa9;
+}
+
+#div2nossa img,
+#div4nossa img {
+    width: 100%;
+}
+
+#div3nossa {
+    float: left;
+    width: 45%;
+    text-align: justify;
+    line-height: 28px;
+    margin-left: 40px;
+    margin-top: 29px;
+}
+
+#div3nossa h2,
+#div5nossa h2 {
+    margin-bottom: 30px;
+}
+
+#div4nossa {
+    width: 45%;
+    text-align: justify;
+    box-shadow: -20px 30px 20px #95bfa9;
+    float: left;
+    margin-left: 100px;
+}
+
+#div5nossa {
+    width: 40%;
+    margin-left: 5%;
+    text-align: justify;
+    float: left;
+}
+
+#div5nossa p {
+    line-height: 28px;
+}
+
+#div5nossa h3 {
+    margin: 30px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Responsabilidade Social */
+
+.caixaflexresp {
+    width: 100%;
+    display: flex;
+}
+
+.caixaflexresp img {
+    width: 100%;
+}
+
+.item1resp,
+.item2resp,
+.item3resp {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.item1resp h2,
+.item2resp h2,
+.item3resp h2 {
+    color: #95bfa9;
+    padding: 10px;
+    text-align: center;
+}
+
+.item1resp p,
+.item2resp p,
+.item3resp p {
+    text-align: center;
+    text-indent: 1px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+/*  Produtos */
+
+#div1prod {
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+#div13prod {
+    text-align: center;
+}
+
+.sectionprod h2 {
+    color: #0388a6;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#div2prod {
+    float: left;
+    box-shadow: -10px 20px 10px #95bfa9;
+    width: 47%;
+    height: 300px;
+    overflow: hidden;
+}
+
+#div2prod img {
+    width: 100%;
+}
+
+#div3prod {
+    float: right;
+    width: 47%;
+    text-align: justify;
+}
+
+#div3prod h2 {
+    color: #95bfa9;
+    text-align: justify;
+}
+#div21prod {
+    float: right;
+    box-shadow: -10px 20px 10px #95bfa9;
+    width: 47%;
+    height: 239px;
+    overflow: hidden;
+    position: relative;
+    }
+
+    #div21prod img {
+        width: 100%;
+        position: absolute;
+        }
+
+#div31prod {
+    float: left;
+    width: 47%;
+    text-align: justify;
+}
+
+#div31prod h2 {
+    color: #95bfa9;
+    text-align: justify;
+}
+
+.sectionprod section {
+    margin-bottom: 90px;
+}
+
+#div12 {
+    text-align: center;
+}
+
+#div12 a {
+    color: #0388a6;
+    text-decoration: none;
+}
+/* News */
+.pagenews section {
+    width: 100%;
+    text-align: justify;
+    font-weight: 700;
+    color: #95bfa9;
+    line-height: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.pagenews p a {
+    text-decoration: none;
+    color: #0388a6;
+
+}
+
+.pagenews .news {
+    width: 30%;
+    margin: 10px 10px 30px 10px;
+    background: #f0f0f2;
+    border-radius: 0 0 20px 20px;
+}
+
+.pagenews img {
+    width: 100%;
+    height: 250px;
+}
+
+
+
+.pagenews h1 {
+    text-align: center;
+    margin: 30px 0 10px 0
+}
+
+.pagenews .line {
+    border: 2px solid #96c1a7;
+    width: 30px;
+    margin: 0 auto 30px auto;
+}
+
+.pagenews p {
+    line-height: 24px;
+    padding: 20px;
+    text-align: center;
+    }
+
+
+/* pagenavi */
+.navigation {
+    width: 400px;
+    margin: 50px auto;
+}
+
+.navigation div {
+    display: inline-block;
+}
+
+.navigation div a {
+    color: #FFF;
+    text-decoration: none;
+    background: #5386a5;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navigation div a:hover {
+    background: #a2cad7;
+    color: #272727
+}
+
+/* Contato */
+    .cabecalhohead {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .campo1 {
+        margin-top: 50px;
+        }
+    .posicao2head {
+        text-align: center;
+    }
+
+    .meiohead {
+        width: 80%;
+        margin: 0 auto
+    }
+
+    .conteiner {
+        width: 50%;
+        margin: auto;
+
+    }
+
+
+    .campo {
+
+        margin-bottom: 1em;
+    }
+
+    .campo label {
+        margin-bottom: 0, 4em;
+
+        display: block;
+    }
+
+    .campo input {
+        width: 100%;
+        padding: 10px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid;
+        background: #e7e7e9;
+        }
+        .endereco, .mensagem {
+            height: 108px;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            background: #e7e7e9;
+            }
+    .campo {
+        margin: 1em 0;
+    }
+
+    textarea {
+        width: 100%;
+        border: 2px solid;
+    }
+
+    p small {
+        color: #ff0000;
+    }
+
+    .botaohead button {
+        background: #0388a6;
+        padding: 10px 20px;
+        color: #FFF;
+        border: 2px solid #0388a6;
+        border-radius: 3px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+.esquerda {width: 47%;
+float: left;}
+.direita {width: 47%;
+    float: right;}
