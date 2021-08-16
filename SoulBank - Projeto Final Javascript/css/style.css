@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --opaque-black: #262626;
+    --GREEN: #44B3C3;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.darkmode {
+    background-color: var(--opaque-black);
+    color: var(--secondary-color);
+    transition: .6s;
+}
+
+.modoclaro {
+    color: var(--opaque-black);
+}
+
+.modoescuro {
+    color: var(--secondary-color)
+}
+
+.lightmode {
+    background-color: var(--secondary-color);
+    color: var(--opaque-black);
+    transition: .6s;
+}
+
+.botoes {
+    background-color: rgb(25, 92, 92);
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 9px;
+    border-radius: 6px;
+    box-shadow: rgb(0, 0, 0, 0.4) 5px 5px 15px 5px;
+    border: 1px solid rgba(28, 110, 164, 0.562);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.botoes:hover {
+    background-color: rgb(20, 70, 70);
+}
+
+.simular {
+    width: 13vw;
+    color: var(--secondary-color);
+    text-decoration: none;
+    height: 6vh;
+}
+
+.access {
+    width: 6vw;
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+#modo-noturno {
+    width: 10vw;
+    margin: 0 1.5rem;
+}
+
+.logo {
+    width: 15vw;
+    content: url(../images/logo2.png);
+}
+
+.logodark {
+    width: 15vw;
+    content: url(../images/logo4.png);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+.stronger {
+    font-weight: 900;
+}
+
+.index-main {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.a-link {
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.header-container {
+    width: 100vw;
+    height: 90vh;
+}
+
+.main-h1,
+.main-h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.main-h1 {
+    font-size: 2rem;
+}
+
+.main-h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.h-container {
+    width: 45vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15vh;
+    margin-left: 4vw;
+}
+
+#blackline {
+    height: 10px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.blackline {
+    background-color: var(--opaque-black);
+    transition: 0.6s;
+}
+
+.blacklinelight {
+    background-color: #cfa90e;
+    height: 22px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    transition: 0.6s;
+}
+
+.cadastro-img {
+    background: url(../images/busy-world-trade-centre-station.jpg) center no-repeat;
+    width: 100vw;
+    height: 120vh;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+.conversor-img {
+    background: url(../images/busy-world-trade-centre-station.jpg) center no-repeat;
+    width: 100vw;
+    height: 160vh;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+.calculadora-img {
+    background: url(../images/busy-world-trade-centre-station.jpg) center no-repeat;
+    width: 100vw;
+    height: 150vh;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+.hero {
+    width: 100vw;
+    height: 90vh;
+    background: url(../images/hero-image.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+.herodark {
+    width: 100vw;
+    height: 90vh;
+    background: url(../images/hero-image-dark.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: .5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+
+/* main section */
+
+.flex-main {
+    color: rgb(0, 0, 0);
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-areas: "beneficios-main";
+    padding: 0.2%;
+}
+
+
+/* Alteração de textos e títulos do Main */
+
+.titulos {
+    font-size: 1.5rem;
+    color: var(--opaque-black);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.texto {
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+    padding: 0.5rem;
+}
+
+
+/* lista das redes sociais footer*/
+
+.beneficios-main ul {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Noto Sans JP";
+}
+
+.beneficios-main ul li {
+    width: 23%;
+    padding: 2%;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.beneficios-main img {
+    display: block;
+    width: 15%;
+}
+
+.beneficios-main ul li p {
+    margin-top: 1rem;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+}
+
+
+/* Criação do botão aumentar fonte */
+
+#botaoAumentar {
+    background-color: rgb(25, 92, 92);
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 16px;
+    padding: 9px;
+    border-radius: 6px;
+    font-weight: normal;
+    box-shadow: rgb(0, 0, 0, 0.4) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+    cursor: pointer;
+}
+
+#botaoAumentar:hover {
+    background-color: rgb(20, 70, 70);
+}
+
+
+/* Alinhamento do botão aumentar */
+
+#botao {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.beneficios-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.beneficios-item {
+    width: fit-content;
+    margin: 5rem 1rem;
+    width: 26vw;
+    height: 30vh;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.plus-minus-icons-box {
+    position: absolute;
+    right: 5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.fa-minus,
+.fa-plus {
+    font-size: 1.5rem;
+}
+
+
+/* fim main section */
+
+.fundadores {
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fundadores-h3,
+.fundadores-h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fundadores-h3 {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+}
+
+.fundadores-h4 {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.in-img {
+    border-radius: 10px;
+}
+
+
+/* SUPER MASTER SLIDE */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 70vw;
+    position: relative;
+    margin: 2rem auto;
+}
+
+
+/* Esconder imagens por padrão */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Próximo/anterior */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* posiciona botão próximo ao lado direito */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* black background color no hover com um pouco de transparência */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* numeros 1/n */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* pontos/bolinhas */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* animação fade */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #cfa90e;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: 0.6s;
+}
+
+#myBtn:hover {
+    background-color: var(--GREEN);
+    transition: 0.6s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* FIM DO SUPER MASTER SLIDE */
+
+
+/* Footer*/
+
+footer {
+    width: 100vw;
+    height: 10vh;
+}
+
+.footer-container {
+    background-color: #0d0d0d;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*Tamanho das imagens do rodapé*/
+
+.imagem-social-footer {
+    width: 2em;
+    height: 2em;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+
+/* lista das redes sociais footer*/
+
+.social-footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Definição das classes (FOOTER)*/
+
+.social-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 23vw;
+}
+
+
+/*Estilização da seção copy-footer*/
+
+.copy-footer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Fim da estilização do Footer */

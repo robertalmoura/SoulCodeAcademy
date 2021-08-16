@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a7d1e099f6.js" crossorigin="anonymous"></script>
+
+    <title>Soul Bank</title>
+</head>
+
+<body class="lightmode" id="body">
+    <div class="header-container">
+        <header id="header">
+
+            <nav id="nav">
+                <a href="index.html" class="a-link"><img id="logo" class="logo" alt="logo"></a>
+                <ul id="menu">
+                    <li><a class="modoclaro a-link" href="#fundadores">Fundadores</a></li>
+                    <li><a class="modoclaro a-link " href="conversor.html">Currency</a></li>
+                    <li><a class="modoclaro a-link " href="calculadora.html">Calculadora</a></li>
+                    <li><a class="modoclaro a-link " href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </nav>
+            <nav class="access-buttons">
+                <button id="modo-noturno" class="botoes" onclick="invertmode()">Modo Noturno</button>
+                <button id="login" class="botoes access"><a class="access" href="#">Login</a></button>
+            </nav>
+
+        </header>
+        <section class="h-container">
+            <h1 class="main-h1">Acesso rápido a <strong class="stronger">investimentos</strong> e <strong class="stronger">cotações</strong>, a qualquer hora e em qualquer lugar</h1>
+            <h2 class="main-h2">Tenha acesso a seus investimentos sem precisar abrir conta em uma corretora especializada com a SoulBank</h2>
+            <button class="botoes simular"><a class="simular" href="conversor.html">Simular Conversão</a></button>
+        </section>
+    </div>
+    <div id="hero" class="hero">
+        <div id="blackline" class="blackline"></div>
+    </div>
+    <!----------------------Inicio do  Main------------------------------->
+    <main class="flex-main">
+        <div class="plus-minus-icons-box">
+            <a onclick="smallerLetter()" class="fa-plus">a <i class="fas fa-minus"></i></a>
+            <a onclick="largerLetter()" class="fa-plus">A <i class="fas fa-plus"></i></a>
+        </div>
+        <section class="beneficios-main">
+            <div class="beneficios-item">
+                <img src="images/simbolo.png" alt="">
+                <h3 class="titulos fontSizeControl">Programa de pontos sem custo</h3>
+                <p class="texto fontSizeControl">Acumule pontos sem gastar com mensalidade ou custo de participação.</p>
+            </div>
+            <div class="beneficios-item">
+                <img src="images/seta-cima.png" alt="Gráfico subindo">
+                <h3 class="titulos fontSizeControl">Sem taxas para investimentos</h3>
+                <p class="texto fontSizeControl">Invista em renda fixa e variável sem taxa de corretagem e custódia.</p>
+            </div>
+            <div class="beneficios-item">
+                <img src="images/24Horas.png" alt="">
+                <h3 class="titulos fontSizeControl">Atendimento 24H</h3>
+                <p class="texto fontSizeControl">Conte com a gente 24h por dia, 7 dias por semana pelo chat do app.</p>
+            </div>
+        </section>
+
+        <section id="fundadores" class="fundadores">
+            <h3 class="modoclaro fundadores-h3">Um time que pensa em tudo <strong>para você</strong>.</h3>
+            <h4 class="modoclaro fundadores-h4">Conheça nossos fundadores</h4>
+            <!-- Slideshow  -->
+            <div class="slideshow-container">
+
+                <!-- imagens do linkedin -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <a href="https://www.linkedin.com/in/andressasamaratasca/" target="_blank"><img class="in-img" src="images/1andressa.png" style="width:100%"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <a href="https://www.linkedin.com/in/brunoftravassos/" target="_blank"><img class="in-img" src="images/2bruno.png" style="width:100%"></a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <a href="https://www.linkedin.com/in/guilherme-carvalho-63a1b8202/" target="_blank"><img class="in-img" src="images/3guilherme.png" style="width:100%"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <a href="https://www.linkedin.com/in/mouraroberta/" target="_blank"><img class="in-img" src="images/4roberta.png" style="width:100%"></a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <a href="https://www.linkedin.com/in/brtony/" target="_blank"><img class="in-img" src="images/5weslley.png" style="width:100%"></a>
+                </div>
+
+                <!-- botões proximo e anterior -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- os pontos/circulos -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- botão topo -->
+    <button onclick="topFunction()" id="myBtn" title="Voltar ao topo">▲</button>
+    <!----------------------INÍCIO FOOTER------------------------------->
+    <footer class="footer-container">
+        <section class="social-footer">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img class="imagem-social-footer" src="./images/instagram_projeto.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img class="imagem-social-footer" src="./images/twitter_projeto.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img class="imagem-social-footer" src="./images/whatsapp_projeto.png" alt="Whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img class="imagem-social-footer" src="./images/facebook-icon.png" alt="Whatsapp">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <div class="copy-footer">
+            <p id="copyright-message">Copyright &copy; 2021 | SoulBank LTDA</p>
+        </div>
+
+    </footer>
+    <!----------------------Fim FOOTER------------------------------->
+    <script src="script/index.js"></script>
+</body>
+
+</html>
