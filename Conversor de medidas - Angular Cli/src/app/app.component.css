@@ -1,0 +1,23 @@
+#titulo{
+    margin-left: 10rem;
+    padding-bottom: 3rem;
+    margin-top: 0;
+    font-size: xx-large;
+}
+
+nav{
+    height: 180px;
+    background-color: black;
+}
+
+select,
+label,
+input,
+p,
+span{
+    font-size: x-large;
+}
+
+body {
+    margin-left: 15px;
+}

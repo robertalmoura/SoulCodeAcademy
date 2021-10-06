@@ -1,0 +1,79 @@
+<div class="conteiner-fluid">
+  <nav class="navbar navbar-default">
+    <div class="conteiner-fluir">
+      <div class="nav-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src=".\assets\imagens\Preto Logotipo.png" width="30%">
+        </a>
+      </div>
+    </div>
+  </nav>
+<body>
+    <h3><strong>Escolha uma conversão:</strong></h3>
+    
+    <select name="tipoConversao" id="tipoConversao" [(ngModel)]=conversao.tipoConversao #tipoConversao="ngModel">
+      <option value='kmToM'> Quilômetro para metro</option>
+      <option value='mToK'> Metro para quilômetro</option>  
+      <option value='kmToCm'> Quilômetro para centímetro</option>  
+      <option value='cmToKm'> Centímetro para quilômetro</option>  
+      <option value='cmToM'> Centímetro para metro</option>  
+      <option value='MToCm'> Metro para centímetro</option>    
+    </select>
+
+    <div *ngIf="conversao.tipoConversao === 'kmToM'">
+      <p></p><br/>
+      <label for="kilometro"> Quilômetros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="km" nome="km" type="number" id="km" />
+      <p></p>
+      <label for="metro"> Metros = </label> &nbsp;
+      <span>{{km | kilometroParaMetro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'mToK'">
+      <p></p><br/>
+      <label for="metro"> Metros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="m" nome="m" type="number" id="m"/>
+      <p></p>
+      <label for="kilometro"> Quilômetros = </label> &nbsp;
+      <span>{{m | metroParaKilometro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'kmToCm'">
+      <p></p><br/>
+      <label for="kilometro"> Quilômetros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="km" nome="km" type="number" id="km"/>
+      <p></p>
+      <label for="centimetro"> Centímetros = </label> &nbsp;
+      <span>{{km | kilometroParaCentimetro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'cmToKm'">
+      <p></p><br/>
+      <label for="centimetro"> Centímetros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="cm" nome="cm" type="number" id="cm"/>
+      <p></p>
+      <label for="kilometro"> Quilômetros = </label> &nbsp;
+      <span>{{cm | centimetroParaKilometro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'cmToM'">
+      <p></p><br/>
+      <label for="centimetro"> Centímetros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="cm" nome="cm" type="number" id="cm"/>
+      <p></p>
+      <label for="metro"> Metros = </label> &nbsp;
+      <span>{{cm | centimetroParaMetro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'MToCm'">
+      <p></p><br/>
+      <label for="metro"> Metros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="m" nome="m" type="number" id="m"/>
+      <p></p>
+      <label for="centimetro"> Centímetros = </label> &nbsp;
+      <span>{{m | metroParaCentimetro}} </span>
+    </div>
+
+  </body>
+
+</div>
