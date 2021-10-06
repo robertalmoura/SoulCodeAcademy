@@ -1,0 +1,112 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Cabeçalho -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" id="logo">Conversor de Medidas</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a>
+        </li>
+        <li><a href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Banner -->
+<div class="full"
+  style="background-image:url('https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/adobestock_262853073_72dpi.jpg?itok=GC74ymZt')">
+
+</div>
+
+<!-- Body -->
+<body class="container">
+  <div>
+
+    <!-- Select para escolher o tipo de conversão -->
+    <h3><strong>Escolha uma conversão:</strong></h3>
+    <select name="tipoConversao" id="tipoConversao" [(ngModel)]=conversao.tipoConversao #tipoConversao="ngModel">
+      <option value='kmToM'> Quilômetro para metro</option>
+      <option value='mToK'> Metro para quilômetro</option>
+      <option value='kmToCm'> Quilômetro para centímetro</option>
+      <option value='cmToKm'> Centímetro para quilômetro</option>
+      <option value='cmToM'> Centímetro para metro</option>
+      <option value='MToCm'> Metro para centímetro</option>
+    </select>
+
+    <!-- Cada ngIf vai ser mostrado somente quando sor selecionado, puxa pelo value do select -->
+    <div *ngIf="conversao.tipoConversao === 'kmToM'"> 
+      <p></p><br />
+      <label for="kilometro"> Quilômetros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="km" nome="km" type="number" id="km" />
+      <p></p>
+      <label for="metro"> Metros = </label> &nbsp;
+      <span>{{km | kilometroParaMetro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'mToK'">
+      <p></p><br />
+      <label for="metro"> Metros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="m" nome="m" type="number" id="m" />
+      <p></p>
+      <label for="kilometro"> Quilômetros = </label> &nbsp;
+      <span>{{m | metroParaKilometro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'kmToCm'">
+      <p></p><br />
+      <label for="kilometro"> Quilômetros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="km" nome="km" type="number" id="km" />
+      <p></p>
+      <label for="centimetro"> Centímetros = </label> &nbsp;
+      <span>{{km | kilometroParaCentimetro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'cmToKm'">
+      <p></p><br />
+      <label for="centimetro"> Centímetros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="cm" nome="cm" type="number" id="cm" />
+      <p></p>
+      <label for="kilometro"> Quilômetros = </label> &nbsp;
+      <span>{{cm | centimetroParaKilometro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'cmToM'">
+      <p></p><br />
+      <label for="centimetro"> Centímetros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="cm" nome="cm" type="number" id="cm" />
+      <p></p>
+      <label for="metro"> Metros = </label> &nbsp;
+      <span>{{cm | centimetroParaMetro}} </span>
+    </div>
+
+    <div *ngIf="conversao.tipoConversao === 'MToCm'">
+      <p></p><br />
+      <label for="metro"> Metros </label> &nbsp;&nbsp;
+      <input [(ngModel)]="m" nome="m" type="number" id="m" />
+      <p></p>
+      <label for="centimetro"> Centímetros = </label> &nbsp;
+      <span>{{m | metroParaCentimetro}} </span>
+    </div>
+
+  </div>
+</body>
+
+<!-- Rodapé -->
+<div class="footer navbar-default navbar-fixed-bottom" id="footer">
+  <footer class="container">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Redes Sociais</a></li>
+        <li><a href="#">Saiba Mais</a></li>
+        <li><a href="#">Contatos</a></li>
+      </ul>
+    </div>
+  </footer>
